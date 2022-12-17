@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Sirin+Stencil&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #e5e5e5;
+  font-family: "Sirin Stencil", cursive;
+}
+main {
+  max-width: 800px;
+  width: 90%;
+  margin: auto;
+  padding: 40px;
+}
