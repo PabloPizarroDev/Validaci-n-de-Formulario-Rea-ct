@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #e0e0e0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.logo {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  font-family: "Neutral Face";
+  font-size: 20px;
+  font-weight: bold;
+  color: #294757;
+}
+.page-container {
+  display: flex;
+  padding-left: 100px;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  width: 100%;
+}
+.page-not-found {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  width: 50%;
+}
+.page-not-found span {
+  top: 100px;
+  font-size: 100px;
+  line-height: 89%;
+  color: #1f3d4d;
+  font-weight: bold;
+  overflow: hidden;
+  font-family: "Bigilla";
+}
+.span404 {
+  display: inline-block;
+  width: max-content;
+  font-size: 100px;
+  text-align: center;
+  padding: 5px 50px;
+  border-radius: 300px;
+  border: 2px solid #b68c60;
+}
+.home-btn {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+}
+.home-btn button {
+  padding: 100px 75px;
+  border-radius: 50%;
+  font-size: 20px;
+  font-family: "Neutral Face";
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: #b68c60;
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.home-btn button:hover {
+  transform: scale(1.2);
+}

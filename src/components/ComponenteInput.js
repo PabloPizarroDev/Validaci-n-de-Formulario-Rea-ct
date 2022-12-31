@@ -9,7 +9,7 @@ import {
   Input,
   Label,
   LeyendaError,
-} from "../elementos/Formularios";
+} from "../styles/Formularios";
 
 const ComponenteInput = ({
   estado,
@@ -55,6 +55,7 @@ const ComponenteInput = ({
           onBlur={validacion}
           valido={estado.valido}
         />
+
         <IconoValidacion
           icon={estado.valido === "true" ? faCheckCircle : faTimesCircle}
           valido={estado.valido}

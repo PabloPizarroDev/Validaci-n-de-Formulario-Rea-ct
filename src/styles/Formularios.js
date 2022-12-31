@@ -157,6 +157,40 @@ const MensajeError = styled.div`
     margin-left: 10px;
   }
 `;
+const ComponenteTextArea = styled.textarea`
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 3px;
+  height: 100px;
+  padding: 0 40px 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  grid-column: span 2;
+
+  transition: 0.3s ease all;
+  border: 3px solid transparent;
+
+  &:focus {
+    border: 3px solid ${colores.borde};
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+  }
+  ${(props) =>
+    props.valido === "true" &&
+    css`
+      border: 3px solid transparent;
+    `}
+  ${(props) =>
+    props.valido === "false" &&
+    css`
+      border: 3px solid ${colores.error} !important;
+    `}
+     @media (max-width: 800px) {
+    grid-column: span 1;
+  }
+`;
 
 export {
   Formulario,
@@ -170,4 +204,5 @@ export {
   ContenedorTerminos,
   MensajeExito,
   MensajeError,
+  ComponenteTextArea,
 };
